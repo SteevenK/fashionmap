@@ -16,10 +16,10 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test",
-    "dev": "nx serve"
+    "start": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [

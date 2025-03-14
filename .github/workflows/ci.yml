@@ -25,8 +25,8 @@ jobs:
 
       # 4. Construire l'application (adaptez le nom de votre projet)
       - name: Build project
-        run: npx nx build fashion-center-map
+        run: npx nx build fashionmap
 
       # 5. Lancer les tests unitaires (adaptez le nom de votre projet)
       - name: Run tests
-        run: npx nx test fashion-center-map
+        run: npx nx test fashionmap
