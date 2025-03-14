@@ -14,11 +14,10 @@ jobs:
       # 1. Récupérer le code du repository
       - uses: actions/checkout@v3
 
-      # 2. Installer Node.js (choisissez la version souhaitée, ici par exemple 16)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
 
       # 3. Installer les dépendances
       - name: Install dependencies
