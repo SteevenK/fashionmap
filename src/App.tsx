@@ -13,6 +13,8 @@ interface StoreInfo {
 const stores: StoreInfo[] = [
   { id: 1, name: 'Magasin A', info: 'Informations sur le Magasin A', x: 50, y: 50, width: 100, height: 80 },
   { id: 2, name: 'Magasin B', info: 'Informations sur le Magasin B', x: 200, y: 50, width: 120, height: 90 },
+  { id: 3, name: 'Magasin C', info: 'Informations sur le Magasin C', x: 100, y: 150, width: 80, height: 60 },
+  { id: 4, name: 'Magasin D', info: 'Informations sur le Magasin D', x: 250, y: 150, width: 90, height: 70 },
 ];
 
 const App: React.FC = () => {
@@ -25,6 +27,8 @@ const App: React.FC = () => {
         <p className="text-lg text-gray-600 mt-2">
           Découvrez la carte interactive de notre centre commercial
         </p>
+
+
       </header>
 
       <div className="flex flex-col md:flex-row justify-center items-start gap-6">

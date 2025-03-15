@@ -4,16 +4,15 @@
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^18.0.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5"
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.8.2"
   },
   "scripts": {
     "start": "vite",
@@ -23,8 +22,9 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
     ]
   },
   "browserslist": {
@@ -40,27 +40,24 @@
     ]
   },
   "devDependencies": {
-    "@eslint/js": "^8.57.1",
+    "@eslint/js": "^9.22.0",
     "@nx/vite": "20.6.0",
     "@nx/web": "20.6.0",
-    "@rollup/plugin-replace": "^2.4.2",
+    "@rollup/plugin-replace": "^6.0.2",
     "@testing-library/jest-dom": "^6.6.3",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/parser": "^8.26.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/ui": "^3.0.0",
+    "@vitest/ui": "^3.0.8",
     "autoprefixer": "^10.4.21",
-    "eslint": "^8.57.1",
-    "eslint-config-react-app": "^7.0.1",
+    "eslint": "^9.22.0",
     "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "globals": "^11.12.0",
-    "jest-watch-typeahead": "^1.1.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "jest-watch-typeahead": "^2.2.2",
     "jiti": "2.4.2",
     "nx": "20.6.0",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "typescript-eslint": "^8.26.1",
+    "tailwindcss": "^4.0.14",
     "vite": "^6.2.2",
     "vitest": "^3.0.8",
     "web-vitals": "^4.2.4"
