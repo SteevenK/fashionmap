@@ -44,6 +44,7 @@
     "@nx/vite": "20.6.0",
     "@nx/web": "20.6.0",
     "@rollup/plugin-replace": "^6.0.2",
+    "@tailwindcss/postcss": "^4.0.14",
     "@testing-library/jest-dom": "^6.6.3",
     "@typescript-eslint/parser": "^8.26.1",
     "@vitejs/plugin-react": "^4.3.4",
