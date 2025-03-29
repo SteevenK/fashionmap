@@ -14,7 +14,7 @@ const StorePolygon: React.FC<StorePolygonProps> = ({ store, onMouseEnter, onMous
       points={store.points}
       fill="rgba(255, 0, 0, 0.2)"  // fond rouge semi-transparent
       stroke="red"
-      strokeWidth={2}
+      strokeWidth={0.5}
       style={{ cursor: 'pointer' }}
       onMouseEnter={(e: MouseEvent<SVGPolygonElement>) => onMouseEnter(store, e)}
       onMouseLeave={onMouseLeave}

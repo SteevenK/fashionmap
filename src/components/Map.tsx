@@ -57,23 +57,23 @@ const Map: React.FC = () => {
           {/* Quadrillage */}
           {Array.from({ length: Math.floor(svgWidth / gridSpacing) + 1 }).map((_, i) => {
             const x = i * gridSpacing;
-            const strokeColor = x % 50 === 0 ? "green" : "lightgray";
-            const strokeWidth = x % 50 === 0 ? 0.75 : 0.25;
+            const strokeColor = x % 25 === 0 ? "green" : "lightgray";
+            const strokeWidth = x % 25 === 0 ? 0.75 : 0.25;
             return (
               <line key={`v-${x}`} x1={x} y1={0} x2={x} y2={svgHeight} stroke={strokeColor} strokeWidth={strokeWidth} />
             );
           })}
           {Array.from({ length: Math.floor(svgHeight / gridSpacing) + 1 }).map((_, i) => {
             const y = i * gridSpacing;
-            const strokeColor = y % 50 === 0 ? "green" : "lightgray";
-            const strokeWidth = y % 50 === 0 ? 0.75 : 0.25;
+            const strokeColor = y % 25 === 0 ? "green" : "lightgray";
+            const strokeWidth = y % 25 === 0 ? 0.75 : 0.25;
             return (
               <line key={`h-${y}`} x1={0} y1={y} x2={svgWidth} y2={y} stroke={strokeColor} strokeWidth={strokeWidth} />
             );
           })}
           {Array.from({ length: Math.floor(svgWidth / gridSpacing) + 1 }).map((_, i) => {
             const x = i * gridSpacing;
-            return x % 50 === 0 ? (
+            return x % 25 === 0 ? (
               <text key={`v-text-${x}`} x={x + 1} y={10} fill="green" fontSize="6">
                 {x}
               </text>
@@ -81,7 +81,7 @@ const Map: React.FC = () => {
           })}
           {Array.from({ length: Math.floor(svgHeight / gridSpacing) + 1 }).map((_, i) => {
             const y = i * gridSpacing;
-            return y % 50 === 0 ? (
+            return y % 25 === 0 ? (
               <text key={`h-text-${y}`} x={1} y={y - 1 > 6 ? y - 1 : 6} fill="green" fontSize="6">
                 {y}
               </text>
